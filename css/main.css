@@ -1,0 +1,39 @@
+.navbar .btn-dark{
+    border-color: transparent;
+    background-color: transparent;
+}
+
+.card-deck.-withBtn .card-body{
+    display: flex;
+    flex-flow: column;
+}
+
+.card-deck.-withBtn .card-body .btn{
+    margin-top: auto;
+}
+.btn-link.-colorChange{
+    color: darkorange;
+}
+
+.navbar .btn-dark:hover {
+    color: darkgray;
+    background-color: transparent;
+}
+.navbar .btn-dark:focus{
+    color: orange;
+    outline-color: transparent;
+    outline: 0;
+    box-shadow: none;
+}
+
+.navbar .btn-dark:active{
+    color: #fff;
+    background-color: transparent;
+    border-color: transparent;
+}
+
+.footer{
+    padding: 40px;
+    background: #343a40;
+}
+
