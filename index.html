@@ -7,18 +7,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
     <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
     <link rel="stylesheet" href="css/main.css">
 
     <title>Benvenutti a Grupo Menosesmas!</title>
 </head>
 
-<body>
+<body id="top">
 
-    <!-- CAROUSEL -->
+    <!-- navbar -->
 
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-        <a class="navbar-brand" href="#"><img src="img/logo-mesm.png" id="menosesmasLogo" ></a>
+    <nav class="navbar fixed-top navbar-expand-lg navbar-dark bg-dark">
+        <a class="navbar-brand" href="#"><img src="img/mesm-logo.png" srcset="img/mesm-logo-2x.png" alt="Logo di GrupoMenosesMas" width="100"></a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>
   </button>
@@ -26,16 +26,17 @@
         <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
             <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
                 <li class="nav-item active">
-                    <a class="nav-link" href="#">Chi Siamo <span class="sr-only">(current)</span></a>
+                    <button class="btn-dark js-mainMenuCTA" data-href="#Us">Chi Siamo <span class="sr-only">(current)</span></button>
+                </li>
+
+                <li class="nav-item">
+                    <button class="btn-dark js-mainMenuCTA" data-href="#Portfolio">Portafoglio</button>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#">Portafoglio</a>
+                    <button class="btn-dark js-mainMenuCTA" data-href="#Price">Prezzi</button>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link " href="#">Prezzi</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link " href="#">Lavora con noi</a>
+                    <button class="btn-dark js-mainMenuCTA" data-href="#Workwhitus">Lavora con noi</button>
                 </li>
             </ul>
         </div>
@@ -48,21 +49,21 @@
         </ol>
         <div class="carousel-inner">
             <div class="carousel-item active">
-                <img class="d-block w-100" src="https://placeimg.com/640/480/any" alt="First slide">
+                <img class="d-block w-100" src="img/home-carrousel/web-agency2x.jpg" alt="First slide">
                 <div class="carousel-caption d-none d-md-block">
                     <h2>Websites</h2>
                     <p>Creazione di siti web</p>
                 </div>
             </div>
             <div class="carousel-item">
-                <img class="d-block w-100" src="https://placeimg.com/640/480/any" alt="Second slide">
+                <img class="d-block w-100" src="img/home-carrousel/branding2x.jpg" alt="Second slide">
                 <div class="carousel-caption d-none d-md-block">
                     <h2>Branding</h2>
                     <p>logo, broshure, catalogui</p>
                 </div>
             </div>
             <div class="carousel-item">
-                <img class="d-block w-100" src="https://placeimg.com/640/480/any" alt="Third slide">
+                <img class="d-block w-100" src="img/home-carrousel/socials2x.jpg" alt="Third slide">
                 <div class="carousel-caption d-none d-md-block">
                     <h2>Social Media </h2>
                     <p>facebook, instagram</p>
@@ -72,121 +73,83 @@
         <a class="carousel-control-prev" href="#carouselHomePage" role="button" data-slide="prev">
     <span class="carousel-control-prev-icon" aria-hidden="true"></span>
     <span class="sr-only">Previous</span>
-  </a>
+    </a>
         <a class="carousel-control-next" href="#carouselHomePage" role="button" data-slide="next">
     <span class="carousel-control-next-icon" aria-hidden="true"></span>
     <span class="sr-only">Next</span>
-  </a>
-    </div>
+    </a>
+   </div>
 
-    <!-- CARD -->
-<div class="container my-5">
+    <!-- US -->
+<div id="Us" class="container my-5">
     <div><h2 class="text-center text-dark" >Noi</h2></div>
     <div class="card-deck ">
-        <div class="card w-25">
-            <img class="card-img-top" src="https://placeimg.com/640/480/any" alt="Card image cap">
+        <div class="card">
+            <img class="card-img-top" src="img/noi/ryan-sm.jpg" alt="Card image cap">
             <div class="card-body">
                 <h5 class="card-title">Ryan Serrano</h5>
                 <h6 class="card-subtitle mb-2 text-muted">FrontEnd Developer</h6>
-                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                <a href="http://www.menosesmas.it/ryan/" class="card-link">Sito Personale</a>
-                <a href="#" class="card-link">Contattami</a>
+                <p class="card-text">Sono un progettista web & grafico, amante della tecnologia, appassionato di semplificare le metodologie. Sto cercando un lavoro con grandi richieste che mi permette di sviluppare il mio pieno potenziale. Mi sento pronto a raggiungere il successo con una grande squadra.</p>
+                <a href="http://www.menosesmas.it/ryan/" class="btn btn-link -colorChange">Sito Personale</a>
+                <button data-href="#Workwhitus" class="btn btn-link js-mainMenuCTA -colorChange">Contattami</button>
             </div>
         </div>
         <div class="card">
-            <img class="card-img-top" src="https://placeimg.com/640/480/any" alt="Card image cap">
+            <img class="card-img-top" src="img/noi/cindy-sm.jpg" alt="Card image cap">
             <div class="card-body">
                 <h5 class="card-title">Cindy Rojas</h5>
-                <h6 class="card-subtitle mb-2 text-muted">Graphic Designer</h6>
-                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                <a href="#" class="card-link">Sito Personale</a>
-                <a href="#" class="card-link">Contattami</a>
+                <h6 class="card-subtitle mb-2 text-muted">UX/UI Designer</h6>
+                <p class="card-text">Ciao, Sono Cindy Rojas una Graphic Designer specializzata in branding, stampe e il layout rivista. Mi piace collaborare su ogni progetto come se fosse l'ultima e dare il massimo per ottenere un risultato perfetto. Mi piace passare il tempo con la mia famiglia e partecipare alle attività pro-animali.</p>
+                <a href="https://www.menosesmas.it/cindy/" class="btn btn-link -colorChange">Sito Personale</a>
+                <button data-href="#Workwhitus" class="btn btn-link js-mainMenuCTA -colorChange">Contattami</button>
             </div>
         </div>
     </div>
 </div>
 
     <!-- PORTAFOLIO -->
-    <div class="bg-dark py-3">
-        <div><h2 class="text-center text-light" >Alcuni Lavori</h2></div>
+    <div id="Portfolio" class="bg-dark py-3">
         <div class="container">
-            <div class="row">
-                <div class="col-md-4">
-                    <div class="card mb-4 box-shadow">
-                        <img class="card-img-top" src="https://placeimg.com/640/480/any" alt="Card image cap">
-                        <div class="card-body">
-                            <h5 class="card-title">Card title 1</h5>
-                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                            <a href="#" class="btn btn-primary">Go somewhere</a>
-                        </div>
-                    </div>
+        <h2 class="text-center text-light" >Cosa facciamo</h2>
+        <div class="card-deck -withBtn">
+            <div class="card">
+                <img src="img/cosa-facciamo/grafico.jpg" class="card-img-top" alt="Grafico">
+                <div class="card-body">
+                    <h5 class="card-title">Grafica Editoriale & Pubblicitaria</h5>
+                    <p class="card-text">La tua impresa ha qualcosa di speciale? Noi lo sapiamo e siamo pronti a dirlo a tutti :-) Come?
+                        Mettendo a tua disposizione la nostra professionalità, capace di creare per te comunicazioni e campagne pubblicitarie uniche e di grande impatto e in grado di farsi ricordare a lungo.</p>
+                    <a href="pages/services.html" class="btn btn-dark">Vedere di più</a>
                 </div>
-                <div class="col-md-4">
-                    <div class="card mb-4 box-shadow">
-                        <img class="card-img-top" src="https://placeimg.com/640/480/any" alt="Card image cap">
-                        <div class="card-body">
-                            <h5 class="card-title">Card title 1</h5>
-                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                            <a href="#" class="btn btn-primary">Go somewhere</a>
-                        </div>
-                    </div>
+            </div>
+            <div class="card">
+                <img src="img/cosa-facciamo/web.jpg" class="card-img-top" alt="Website">
+                <div class="card-body">
+                    <h5 class="card-title">Sviluppo Web</h5>
+                    <p class="card-text">È online che la maggior parte dei clienti cerca informazioni su prodotti e servizi prima di compiere un acquisto. Per questo, essere presenti con un sito aziendale e dare al cliente tutte le spiegazioni di cui ha bisogno è il modo migliore per promuovere la propria attività ed aumentare i volumi di vendita.</p>
+                    <a href="#" class="btn btn-dark">Vedere di più</a>
                 </div>
-                <div class="col-md-4">
-                    <div class="card mb-4 box-shadow">
-                        <img class="card-img-top" src="https://placeimg.com/640/480/any" alt="Card image cap">
-                        <div class="card-body">
-                            <h5 class="card-title">Card title 1</h5>
-                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                            <a href="#" class="btn btn-primary">Go somewhere</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-4">
-                    <div class="card mb-4 box-shadow">
-                        <img class="card-img-top" src="https://placeimg.com/640/480/any" alt="Card image cap">
-                        <div class="card-body">
-                            <h5 class="card-title">Card title 1</h5>
-                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                            <a href="#" class="btn btn-primary">Go somewhere</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-4">
-                    <div class="card mb-4 box-shadow">
-                        <img class="card-img-top" src="https://placeimg.com/640/480/any" alt="Card image cap">
-                        <div class="card-body">
-                            <h5 class="card-title">Card title 1</h5>
-                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                            <a href="#" class="btn btn-primary">Go somewhere</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-4">
-                    <div class="card mb-4 box-shadow">
-                        <img class="card-img-top" src="https://placeimg.com/640/480/any" alt="Card image cap">
-                        <div class="card-body">
-                            <h5 class="card-title">Card title 1</h5>
-                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                            <a href="#" class="btn btn-primary">Go somewhere</a>
-                        </div>
-                    </div>
+            </div>
+            <div class="card">
+                <img src="img/cosa-facciamo/ui-ux.jpg" class="card-img-top" alt="UX/UI">
+                <div class="card-body">
+                    <h5 class="card-title">UX/UI Design</h5>
+                    <p class="card-text">Se il tuo desiderio è quello di aumentare la visibilità della tua attività e di farti conoscere da più clienti potenzialmente interessati alla tua offerta, non perdere tempo e affidati alla nostra competenza: sapremo consigliarti le soluzioni giuste per dare risalto alla tua impresa ed evitare errori.</p>
+                    <a href="#" class="btn btn-dark">Vedere di più</a>
                 </div>
             </div>
         </div>
+        </div>
+
     </div>
-    
-    <!-- PREZZI --> 
-<idv class="container">
+    <!-- PREZZI -->
+<div id="Price" class="container">
     <div><h2 class="text-center text-dark" >Prezzi</h2></div>
     <div class="card-deck mb-3 text-center">
-        <idv class="card mb-4 box-shadow">
+        <div class="card mb-4 bg-light box-shadow">
             <div class="card-header">
-                <h4 class="my-0 font-weight-normal">Comporativo</h4>
+                <h4 class="my-0 font-weight-normal">Basico</h4>
                 <div class="card-boddy">
-                    <h1 class="card-title pricing-card-title">$76
-                        <small class="text-muted">/ mo</small>
-                    </h1>
+                    <h1 class="card-title pricing-card-title text-warning">€190</h1>
                     <ul class="list-unstyled mt-3 mb-4">
                         <li>10 users included</li>
                         <li>2 GB of storage</li>
@@ -194,16 +157,14 @@
                         <li>Help center access</li>
                     </ul>
                 </div>
-                <button type="button" class="btn btn-lg btn-block btn-outline-primary">Sign up for free</button>
+                <button type="button" class="btn btn-lg btn-block btn-outline-dark">Compra</button>
             </div>
-        </idv>
-        <idv class="card mb-4 box-shadow">
+        </div>
+        <div class="card mb-4 box-shadow bg-light">
             <div class="card-header">
-                <h4 class="my-0 font-weight-normal">Comporativo</h4>
+                <h4 class="my-0 font-weight-normal">Corporativo</h4>
                 <div class="card-boddy">
-                    <h1 class="card-title pricing-card-title">$76
-                        <small class="text-muted">/ mo</small>
-                    </h1>
+                    <h1 class="card-title pricing-card-title text-warning">€590</h1>
                     <ul class="list-unstyled mt-3 mb-4">
                         <li>10 users included</li>
                         <li>2 GB of storage</li>
@@ -211,16 +172,14 @@
                         <li>Help center access</li>
                     </ul>
                 </div>
-                <button type="button" class="btn btn-lg btn-block btn-outline-primary">Sign up for free</button>
+                <button type="button" class="btn btn-lg btn-block btn-outline-dark">Compra</button>
             </div>
-        </idv>
-        <idv class="card mb-4 box-shadow">
+        </div>
+        <div class="card mb-4 box-shadow text-white bg-dark">
             <div class="card-header">
-                <h4 class="my-0 font-weight-normal">Comporativo</h4>
+                <h4 class="my-0 font-weight-normal">Enterprise</h4>
                 <div class="card-boddy">
-                    <h1 class="card-title pricing-card-title">$76
-                        <small class="text-muted">/ mo</small>
-                    </h1>
+                    <h1 class="card-title pricing-card-title text-warning">€1900</h1>
                     <ul class="list-unstyled mt-3 mb-4">
                         <li>10 users included</li>
                         <li>2 GB of storage</li>
@@ -228,19 +187,41 @@
                         <li>Help center access</li>
                     </ul>
                 </div>
-                <button type="button" class="btn btn-lg btn-block btn-outline-primary">Sign up for free</button>
+                <button type="button" class="btn btn-lg btn-block btn-outline-light">Compra</button>
             </div>
-        </idv>
+        </div>
     </div>
-</idv>
+</div>
 
-
+    <!-- footer -->
+    <footer id="Workwhitus" class="footer text-muted">
+        <div><h2 class="text-center text-light" >Lavora con Noi</h2></div>
+        <div class="container">
+            <form>
+                <div class="form-group mb-2">
+                    <label for="exampleInputEmail1">Email address</label>
+                    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                    <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+                </div>
+                <div class="form-group">
+                    <label for="exampleInputPassword1">Password</label>
+                    <input type="password" class="form-control" id="exampleInputPassword1">
+                </div>
+                <button type="submit" class="btn btn-light">Submit</button>
+            </form>
+            <p class="float-right">
+                <button class="btn btn-link js-mainMenuCTA -colorChange" data-href="#top">Back to top</button>
+            </p>
+            <p>Il mio primo sito in Bootstrap!</p>
+        </div>
+    </footer>
 
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.bundle.min.js" integrity="sha384-1CmrxMRARb6aLqgBO7yyAxTOQE2AKb9GfXnEo760AUcUmFx3ibVJJAzGytlQcNXd" crossorigin="anonymous"></script>
+    <script src="js/main.js"></script>
+
 </body>
 
 </html>
